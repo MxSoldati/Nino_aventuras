@@ -1,0 +1,18 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/Hero.astro';
+import Gallery from '@components/Gallery.astro';
+import Itinerary from '@components/Itinerary.astro';
+import UsefulInfo from '@components/UsefulInfo.astro';
+import Contact from '@components/Contact.astro';
+
+const lang = 'en';
+---
+
+<Layout lang={lang} title="Andes Crossing">
+  <Hero lang={lang} />
+  <Gallery lang={lang} />
+  <Itinerary lang={lang} />
+  <UsefulInfo lang={lang} />
+  <Contact lang={lang} />
+</Layout>
