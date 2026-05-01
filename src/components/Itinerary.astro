@@ -29,8 +29,8 @@ const itinerary = t(lang, 'itinerary');
       <div class="absolute w-0.5 bg-mountain-300 h-full left-1/2 -translate-x-1/2 hidden md:block"></div>
 
       {itinerary.stages.map((stage, i) => (
-        <div class="flex flex-col md:flex-row w-full mb-12 last:mb-0 items-center md:items-start ">
-          <div class={`flex-1 flex justify-center md:justify-end text-right pr-8 mb-4 md:mb-0 ${i % 2 === 0 ? '' : 'md:order-2 md:text-left md:justify-start md:pl-8'}`}>
+        <div class="flex flex-col md:grid md:grid-cols-[1fr_auto_1fr] md:items-center w-full mb-12 last:mb-0 items-center">
+          <div class={`w-full mb-4 md:mb-0 ${i % 2 === 0 ? 'md:col-start-1 md:justify-self-end md:text-right md:pr-8' : 'md:col-start-3 md:justify-self-start md:text-left md:pl-8'}`}>
             <div class="max-w-md">
               <h3 class="font-display font-bold text-xl text-mountain-700 mb-2">
                 {stage.title}
@@ -45,12 +45,8 @@ const itinerary = t(lang, 'itinerary');
           </div>
 
           <!-- Circle -->
-          <div class="relative z-10 w-8 h-8 flex-shrink-0 rounded-full bg-mountain-500 border-4 border-white flex items-center justify-center">
+          <div class="relative z-10 w-8 h-8 flex-shrink-0 rounded-full bg-mountain-500 border-4 border-white flex items-center justify-center md:col-start-2 md:row-start-1 md:justify-self-center">
             <span class="text-white font-bold text-sm">{i + 1}</span>
-          </div>
-
-          <div class={`flex-1 pl-8 mb-4 md:mb-0 ${i % 2 === 0 ? 'md:order-3' : ''}`}>
-            <!-- Empty div for spacing on one side in even items -->
           </div>
         </div>
       ))}

@@ -62,6 +62,12 @@ export const translations = {
           detail: 'Altitud: 1.200 msnm',
           distance: 'Km 130',
         },
+        {
+          title: 'Cierre de la travesía',
+          description: 'Último día del recorrido. Una jornada de descenso y regreso final para cerrar la experiencia en la montaña.',
+          detail: 'Altitud: 1.100 msnm',
+          distance: 'Km 150',
+        },
       ],
     },
     info: {
@@ -211,6 +217,12 @@ export const translations = {
           description: 'The way back. Returning via another path with new perspectives and the satisfaction of completing the journey.',
           detail: 'Altitude: 1,200 m asl',
           distance: 'Km 130',
+        },
+        {
+          title: 'Journey Finale',
+          description: 'Final day of the route. A descent and final return to close out the mountain experience.',
+          detail: 'Altitude: 1,100 m asl',
+          distance: 'Km 150',
         },
       ],
     },
